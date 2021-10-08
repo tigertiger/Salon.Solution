@@ -5,17 +5,21 @@
 @using HairSalon.Models;
 
 <div class="container">
-<h1>Available Stylists</h1>
+  <h1>Available Stylists</h1>
 
-@if (@Model.Count == 0)
-{
-  <h4>There are no available stylists</h4>
-}
+  @if (@Model.Count == 0)
+  {
+    <h4>There are no available stylists</h4>
+  }
 
-<ul>
-@foreach (Stylist stylist in Model)
-{
-  <li>@stylist.Name</li>
-}
-</ul>
+  <ul>
+  @foreach (Stylist stylist in Model)
+  {
+    <li>@stylist.Name</li>
+  }
+  </ul>
+
+  <div class="bottomNav">
+    <p>@Html.ActionLink("Add a Stylist", "Create")</p>
+  </div>
 </div>
