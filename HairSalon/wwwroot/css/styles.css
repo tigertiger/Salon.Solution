@@ -1,3 +1,18 @@
 .container {
-  padding: 3% 0 0 0;
+  padding: 4% 0 0 0;
+}
+
+div#navBar {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  color:rgb(227, 246, 255);
+  background:rgb(5, 52, 66);
+  padding:8px;
+}
+
+.column {
+  float:right;
+  width:15%;
 }
