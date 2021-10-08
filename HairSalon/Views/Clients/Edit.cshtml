@@ -11,11 +11,12 @@
   {
     @Html.HiddenFor(model => model.ClientId)
 
-    @Html.LabelFor(model => model.ClientName)
+    <span class="formLab">Client's Name&nbsp;</span>
     @Html.EditorFor(model => model.ClientName)
-
-    @Html.LabelFor(model => model.Stylist)
+    <br /><br />
+    <span class="formLab">Stylist&nbsp;</span>
     @Html.DropDownList("StylistId")
+    <br /><br/>
 
     <input type="submit" value="Update"/>
   }

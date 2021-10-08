@@ -6,12 +6,15 @@
 @model HairSalon.Models.Client
 
 <div class="container">
-<h3>Delete @Model.ClientName?</h3>
-<h4>Are you sure you want to delete this client?</h4>
-<h5>What about their hair? What will they do about their hair??</h5>
+  <h3>Delete @Model.ClientName?</h3>
+  <h4>Are you sure you want to delete this client?</h4>
+  <h3>What about their hair?</h3>
+  <h2>What will they do about their hair??</h2>
 
-@using (Html.BeginForm())
-{
-  <input type="submit" value="Do It"/>
-}
+  <div class="bottomNav">
+    @using (Html.BeginForm())
+    {
+      <input type="submit" value="Do It"/>
+    }
+  </div>
 </div>

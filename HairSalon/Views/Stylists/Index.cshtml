@@ -15,14 +15,14 @@
   <ul>
   @foreach (Stylist stylist in Model)
   {
-    <li>@Html.ActionLink($"{stylist.Name}", "Details", new {id = stylist.StylistId})</li>
-      <ul>
-        <li>@stylist.Specialty</li>
+    <li><h5>@Html.ActionLink($"{stylist.Name}", "Details", new {id = stylist.StylistId})</h5></li>
+      <ul class="addenda">
+        <li><em>Specializing in:</em> @stylist.Specialty</li>
       </ul>
   }
   </ul>
 
   <div class="bottomNav">
-    <p>@Html.ActionLink("Add a Stylist", "Create")</p>
+    <p>@Html.ActionLink("— Add a Stylist —", "Create")</p>
   </div>
 </div>

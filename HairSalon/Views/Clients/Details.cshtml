@@ -6,7 +6,13 @@
 @model HairSalon.Models.Client
 
 <div class="container">
-<h1>@Model.ClientName</h1>
-<p>@Html.ActionLink("Edit this Client", "Edit", new {id = Model.ClientId})</p>
-<p>@Html.ActionLink("Delete this Client", "Delete", new {id = Model.ClientId})</p>
+  <h1>@Model.ClientName</h1>
+
+  <div class="deets">
+    <p>— Stylist: @Model.Stylist.Name</p>
+  </div>
+  <div class="bottomNav">
+    <p>@Html.ActionLink("— Edit this Client —", "Edit", new {id = Model.ClientId})</p>
+    <p>@Html.ActionLink("— Delete this Client —", "Delete", new {id = Model.ClientId})</p>
+  </div>
 </div>

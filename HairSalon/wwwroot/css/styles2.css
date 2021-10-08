@@ -44,8 +44,32 @@ h1, h2, h3, h4, h5 {
   text-transform: lowercase;
 }
 
+li {
+  text-transform: lowercase;
+  letter-spacing: .2rem;
+}
+
+.addenda li {
+  padding-bottom:25px;
+}
+
+.stylistSp li {
+  padding-bottom:25px;
+  font-style: italic;
+}
+
 .container {
   padding: 10% 0 0 10%;
+}
+
+.deets {
+  padding:20px 0 25px 10px;
+  font-style: italic;
+  letter-spacing: .2rem;
+}
+
+#spesh {
+  padding:0 0 10px 20px;
 }
 
 .centerBlock {
@@ -122,4 +146,5 @@ select {
 
 #cliStyEdit li {
   letter-spacing: -.05rem;
+  text-transform: lowercase;
 }
