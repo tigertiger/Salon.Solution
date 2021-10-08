@@ -11,25 +11,25 @@
   {
     @Html.HiddenFor(model => model.StylistId)
 
-    @Html.LabelFor(model => model.Name)
+    <span class="formLab">Stylist's Name&nbsp;</span>
     @Html.EditorFor(model => model.Name)
-
-    @Html.LabelFor(model => model.Specialty)
+    <br /><br />
+    <span class="formLab">Specialty&nbsp;</span>
     @Html.EditorFor(model => model.Specialty)
-
+    <br /><br />
     <input type="submit" value="Update"/>
   }
 
-  <h3>Edit Stylist's Clients</h3>
-  <ul>
-  @foreach(Client client in Model.Clients)
-  {
-    <li>
-      @Html.ActionLink($"{client.ClientName}", "Edit", "Clients", new {id = client.ClientId})
-      <ul>
-        <li>@Html.ActionLink($"Delete Client", "Delete", "Clients", new {id = client.ClientId})</li>
-      </ul>
-    </li>
-  }
-  </ul>
+  <div id="cliStyEdit">
+    <h3>Edit Stylist's Clients</h3>
+    <ul>
+    @foreach(Client client in Model.Clients)
+    {
+      <li>
+        @Html.ActionLink($"— Edit {client.ClientName}", "Edit", "Clients", new {id = client.ClientId}) <br/>
+        @Html.ActionLink($"— Delete {client.ClientName}", "Delete", "Clients", new {id = client.ClientId})
+      </li>
+    }
+    </ul>
+  </div>
 </div>

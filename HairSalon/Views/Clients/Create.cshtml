@@ -9,10 +9,10 @@
 
   @using(Html.BeginForm())
   {
-    <span>Client's Name&nbsp;</span>
+    <span class="formLab">Client's Name&nbsp;</span>
     @Html.TextBoxFor(model => model.ClientName)
     <br /><br />
-    <span>Stylist&nbsp;</span>
+    <span class="formLab">Stylist&nbsp;</span>
     @Html.DropDownList("StylistId")
     <br /><br />
     <input type="submit" value="Add"/>

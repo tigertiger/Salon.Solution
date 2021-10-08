@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@300;400;600&display=swap');
 
 body {
-background: url("/../../img/background-image.png")no-repeat center center fixed;
+background: url("/../../img/background-image.png")no-repeat center center fixed rgba(138, 155, 167, 0.925);
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+background-blend-mode:luminosity;
 
 color:#fff;
 font-family: 'Raleway', sans-serif;
@@ -15,17 +16,36 @@ a {
   color:#fff;
 }
 
+.bottomNav a {
+  text-transform: uppercase;
+}
+
+.bottomNav a:hover {
+  font-weight:600;
+}
+
 a:hover {
   color:blanchedalmond;
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 h1 {
   padding-bottom:20px;
+  font-size: 45pt;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family:'Italiana', serif;
+  letter-spacing: .2rem;
+  text-transform: lowercase;
 }
 
 .container {
-  padding: 4% 0 0 0;
+  padding: 10% 0 0 10%;
 }
 
 .centerBlock {
@@ -75,5 +95,31 @@ div#navBar {
 }
 
 .bottomNav {
+  padding: 50px 0 0 17%;
+}
+
+.formLab {
+  text-transform: lowercase;
+  letter-spacing: .3rem;
+}
+
+input {
+  font-family: 'Italiana', serif;
+  text-transform: lowercase;
+  letter-spacing: .2rem;
+}
+
+select {
+  font-family: 'Italiana', serif;
+  text-transform: lowercase;
+  letter-spacing: .2rem;
+  padding: 5px 10px;
+}
+
+#cliStyEdit {
   padding: 50px 0 0 0;
+}
+
+#cliStyEdit li {
+  letter-spacing: -.05rem;
 }

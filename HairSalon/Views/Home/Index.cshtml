@@ -1,12 +1,16 @@
 @{
-  Layout = "_Layout";
+  Layout = "_LayoutA";
 }
 
-<div class="container">
-  <h1>Clearwater Salon</h1>
-
-  <p>@Html.ActionLink("Search Stylists", "Search", "Stylists")</p>
-  <br />
-  <p>@Html.ActionLink("See All Stylists", "Index", "Stylists")</p>
-  <p>@Html.ActionLink("See All Clients", "Index", "Clients")</p>
+<div class="centerBlock">
+  <h1>Clearwater Salon</h1><br />
+  <div class="column2">
+    <p>@Html.ActionLink("search stylists", "Search", "Stylists")</p>
+  </div>
+  <div class="column2">
+    <p>@Html.ActionLink("see all stylists", "Index", "Stylists")</p>
+  </div>
+  <div class="column2">
+    <p>@Html.ActionLink("see all clients", "Index", "Clients")</p>
+  </div>
 </div>

@@ -17,8 +17,8 @@
 
 ## Description
 
-_A custom booking webapp for the fictional, but peerless, Eau Claire's Salon. Users can add, edit, and delete stylists. List the name and specialty of each stylist, and then assign them clients._
-_Who hasn't always secretly desired such power?! The fate of all of our hair rests between the precarious blades of your scissors._
+_A custom booking webapp for the fictional, but peerless, Eau Claire's Salon. Users can add, edit, and delete stylists. List the name and specialty of each stylist, and then assign them clients._  
+_Who hasn't always secretly desired such power?! The fate of all of our hair rests between the precarious blades of your scissors._  
 _After setup [see instructions below], simply click around in the web interface to fulfill your small-business-owner dreams._
 
 
