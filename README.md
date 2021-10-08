@@ -1,4 +1,4 @@
-# Clearwater Salon Booking
+# Clearwater Salon Booking System
 
 #### Chop, chop, chop
 
@@ -17,7 +17,9 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_A custom booking webapp for the fictional, but peerless, Eau Claire's Salon. Users can add, edit, and delete stylists. List the name and specialty of each stylist, and then assign them clients._
+_Who hasn't always secretly desired such power?! The fate of all of our hair rests between the precarious blades of your scissors._
+_After setup [see instructions below], simply click around in the web interface to fulfill your small-business-owner dreams._
 
 
 ## Instructions
@@ -32,7 +34,8 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 * Clone [this repository](https://github.com/tigertiger/HairSalon) to an empty folder or to your desktop, or download and open the Zip on your local machine  
     Instructions for cloning can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
-* Open the HairSalon folder in your preferred text editor
+* Open the HairSalon folder in your preferred text editor. We'll come back to this shortly.
+
 * Create a SQL database:
   - Create a new ```appsettings.json``` file in your HairSalon/HairSalon folder
   - Copy the following code into that file, replacing YOUR_PASSWORD with your MySql password:
@@ -43,6 +46,7 @@ _{This is a detailed description of your application. Give as much detail as nee
       }
     }
 ```
+* Create a SQL database, continued:
   - Open a new terminal and run ```mysql -uroot -p<YOUR_PASSWORD>```
   - Open MySQL Workbench
   - Go to Navigator > Administration and select Data Import/Restore
@@ -52,6 +56,7 @@ _{This is a detailed description of your application. Give as much detail as nee
   - Navigate to the Import Progress tab and click Start Import at the bottom right of the window
   - After finishing the steps above, reopen Navigator > Schemas. Right click and select Refresh All. The melissa_schatzmiller database should appear.  
 
+* Return to HairSalon in your text editor
 * Restore and build the project:
   - Navigate to the HairSalon/HairSalon folder in the command line or terminal  
     -- Run ```dotnet restore``` to restore the project dependencies  
@@ -65,8 +70,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs at this time_
 
 ## License
 
