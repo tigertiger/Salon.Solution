@@ -5,7 +5,7 @@
 #### Melissa Schatz-Miller
 
 <p align="center">
-  <img src="Salon/wwwroot/img/schema.png">  
+  <img src="HairSalon/wwwroot/img/schema.png">  
 </p>
 
 ## Technologies Used
