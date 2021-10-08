@@ -12,7 +12,6 @@
 
 * _C#_
 * _.NET 5_
-* _MSTest_
 * _NuGet_
 * _ASP.NET Core_
 
