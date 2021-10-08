@@ -12,13 +12,15 @@
     <h4>You haven't added any clients, yet</h4>
   }
 
-  <ul class="stylistSp">
-  @foreach (Client client in Model)
-  {
-    <li><strong>@Html.ActionLink($"{client.ClientName}", "Details", new {id = client.ClientId}) </strong><br /><span>Stylist: @client.Stylist.Name</span></li>
-  }
-  </ul>
-
+    <ul>
+    @foreach (Client client in Model)
+    {
+      <li><h5>@Html.ActionLink($"{client.ClientName}", "Details", new {id = client.ClientId})</h5></li>
+        <ul class="addenda">
+          <li><em>Stylist:</em> @client.Stylist.Name</li>
+        </ul>
+    }
+    </ul>
   <div class="bottomNav">
     <p>@Html.ActionLink("— Add a Client —", "Create")</p>
   </div>

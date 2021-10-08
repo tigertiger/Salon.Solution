@@ -6,13 +6,15 @@
 @model HairSalon.Models.Stylist
 
 <div class="container">
-<h1>Search for a Stylist</h1>
+  <h1>Search for a Stylist</h1>
 
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
+  @using (Html.BeginForm())
+  {
+    @Html.TextBoxFor(model => model.Name)
 
-  <input type="submit" value="Search"/>
-}
+    <input type="submit" value="Search"/>
+  }
+  <div class="deets">
+    This function doesn't work...yet. Stay tuned, stay trimmed.
+  </div>
 </div>

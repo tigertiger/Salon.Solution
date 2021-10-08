@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="HairSalon/wwwroot/img/clearwater-salon-splash.png">  
+</p>
+
+
 # Clearwater Salon Booking System
 
 #### Chop, chop, chop
