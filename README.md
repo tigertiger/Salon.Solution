@@ -23,7 +23,9 @@
 ## Description
 
 _A custom booking webapp for the fictional, but peerless, Eau Claire's Salon. Users can add, edit, and delete stylists. List the name and specialty of each stylist, and then assign them clients._  
+
 _Who hasn't always secretly desired such power?! The fate of all of our hair rests between the precarious blades of your scissors._  
+
 _After setup [see instructions below], simply click around in the web interface to fulfill your small-business-owner dreams._
 
 
@@ -37,11 +39,10 @@ _After setup [see instructions below], simply click around in the web interface 
 ### Setup/Installation
 
 
-* Clone [this repository](https://github.com/tigertiger/HairSalon) to an empty folder or to your desktop, or download and open the Zip on your local machine  
-    Instructions for cloning can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
+* Clone [this repository](https://github.com/tigertiger/HairSalon) to an empty folder or to your desktop, or download and open the Zip on your local machine. Instructions for cloning can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 * Open the HairSalon folder in your preferred text editor. We'll come back to this shortly.
 
-* Create a SQL database:
+* Set up your SQL database:
   - Create a new ```appsettings.json``` file in your HairSalon/HairSalon folder
   - Copy the following code into that file, replacing YOUR_PASSWORD with your MySql password:
 ```
@@ -51,7 +52,7 @@ _After setup [see instructions below], simply click around in the web interface 
       }
     }
 ```
-* Create a SQL database, continued:
+* Set up your SQL database, continued:
   - Open a new terminal and run ```mysql -uroot -p<YOUR_PASSWORD>```
   - Open MySQL Workbench
   - Go to Navigator > Administration and select Data Import/Restore
